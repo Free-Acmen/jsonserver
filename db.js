@@ -28,7 +28,7 @@ const db = {
     unitType: unitType,
     settAcct: settAcct,
     assistType: assistType,
-    assist: assist,
+    assist: assist,//供应商类别接口
     assistSku: assistSku,
     employee: employee,
     //首页接口
