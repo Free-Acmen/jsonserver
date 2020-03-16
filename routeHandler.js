@@ -13,7 +13,7 @@ module.exports = {
     "/basedata/assistType?action=list": "/assistType", 
     "/basedata/assist?action=list&typeNumber=PayMethod&isDelete=2": "/assist", //结算方式列表
     "/basedata/assist?action=list&isDelete=2": "/assist", 
-    "/basedata/contact/getNextNo?action=getNextNo&type=10": "", //获取供应商编号
+    "/basedata/contact/getNextNo?action=getNextNo&type=10": "/assist", //获取供应商编号
     "/basedata/assist?action=list&isDelete=2&typeNumber=supplytype": '/assist', //供应商类别列表
     "/basedata/assist/add": "/assist", //供应商类别添加 {name: qqq, typeNumber: supplytype}
     "/basedata/assistSku?action=list": "/assistSku", 
