@@ -1,8 +1,0 @@
-{
-  "port": 5000,
-  "watch": true,
-  "static": "./static",
-  "read-only": false,
-  "no-cors": false,
-  "no-gzip": false
-}
