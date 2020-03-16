@@ -16,7 +16,7 @@ aipServer.use((req, res, next) => {
     next()
 })
 
-aipServer.use(jsonServer.bodyParser);
+// aipServer.use(jsonServer.bodyParser);
 
 aipServer.use(apiRouter);
 aipServer.listen(5000, () => {
