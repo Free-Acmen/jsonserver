@@ -14,6 +14,7 @@ const employee = require('./mockData/employee');
 const index = require('./mockData/index'); 
 const getRecentlyContact = require('./mockData/getRecentlyContact'); 
 const invPu = require('./mockData/invPu'); 
+const queryAllUser = require('./mockData/queryAllUser'); 
 
 
 const db = {
@@ -35,6 +36,7 @@ const db = {
     index: index,
     //采购页接口
     getRecentlyContact: getRecentlyContact,
-    invPu: invPu
+    invPu: invPu,
+    queryAllUser: queryAllUser
 }
 module.exports = db
