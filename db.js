@@ -15,6 +15,8 @@ const index = require('./mockData/index');
 const getRecentlyContact = require('./mockData/getRecentlyContact'); 
 const invPu = require('./mockData/invPu'); 
 const queryAllUser = require('./mockData/queryAllUser'); 
+const areasData = require('./mockData/areasData'); 
+const query = require('./mockData/query'); 
 
 
 const db = {
@@ -37,6 +39,8 @@ const db = {
     //采购页接口
     getRecentlyContact: getRecentlyContact,
     invPu: invPu,
-    queryAllUser: queryAllUser
+    queryAllUser: queryAllUser,
+    areasData: areasData, //地址省市选择数据
+    query: query //单个客户信息接口
 }
 module.exports = db

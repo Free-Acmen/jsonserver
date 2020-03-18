@@ -3,6 +3,7 @@ module.exports = {
     "/basedata/inventory?action=list&isDelete=2": "/inventory", 
     "/basedata/inventory?action=list&isDelete=2&rows=5000": "/inventory", 
     "/basedata/inventory?action=list": "/inventory", 
+    "/basedata/inventory?action=list&isDelete=2&_search=false&nd=:nd&rows=:rows&page=:page&sidx=&sord=asc": "/inventory",
     "/basedata/invlocation?action=list&isDelete=2": "/invlocation", 
     "/basedata/contact?action=list&simple=1&isDelete=2&rows=5000": "/contact", 
     "/basedata/contact?action=list&simple=1&type=10&isDelete=2&rows=5000": "/contact10",
@@ -12,7 +13,7 @@ module.exports = {
     "/basedata/unitType?action=list": "/unitType", 
     "/basedata/settAcct?action=list&isDelete=2": "/settAcct", 
     "/basedata/assistType?action=list": "/assistType", 
-    "/basedata/assist?action=list&typeNumber=PayMethod&isDelete=2": "/assist", //结算方式列表
+    "/basedata/assist?action=list&typeNumber=:typeNumber&isDelete=:isDelete": "/assist", //结算方式列表
     "/basedata/assist?action=list&isDelete=2": "/assist", 
     "/basedata/contact/getNextNo?action=getNextNo&type=10": "/assist", //获取供应商编号
     "/basedata/assist?action=list&isDelete=:isDelete&typeNumber=:typeNumber": '/assist', //供应商类别列表
@@ -22,7 +23,9 @@ module.exports = {
     "/report/index?action=getInvData&finishDate=:finishDate&beginDate=:beginDate&endDate=:endDate": "/index", 
     "/basedata/contact/getRecentlyContact": "/getRecentlyContact", 
     "/scm/invPu?action=list": "/invPu",
-    "/right/queryAllUser?action=queryAllUser&_search=false&nd=:nd&rows=:rows&page=:page&sidx=&sord=asc": "/queryAllUser"
+    "/right/queryAllUser?action=queryAllUser&_search=false&nd=:nd&rows=:rows&page=:page&sidx=&sord=asc": "/queryAllUser",
+    "/statics/js/common/areasData.php": '/areasData', //地址区域数据
+    "/basedata/contact/query?action=query": "/query" //单个客户信息接口
 //     "/:resource/:id/show": "/:resource/:id",    //    /data1/001/show ==> /data1/001
 //     "/data1/:name": "/data1?name=:name",    //    /data1/Sherry ==> /data1?name=Sherry
 //     "/:anyArray\\?id=:id": "/:anyArray/:id"                     //    /data1?id=002 ==> /data/002 
